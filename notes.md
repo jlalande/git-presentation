@@ -10,8 +10,10 @@ example of git init
 
 `git diff`
 
+
 cloning
 -------
+
 cloning from github sample project
 
 	this project must have a pom.xml file with scm already configured for showing a full release with tagging
@@ -24,8 +26,10 @@ multiple remote
 
 centralized remote repository vs fetching changes from co-workers
 
+
 branching
 ---------
+
 `git branch BRANCH`
 
 `git checkout BRANCH`
@@ -35,6 +39,7 @@ branching
 everything is a branch
 
 git development diagram with master and devel branches => should it be placed toward the end?
+
 
 staging area
 ------------
@@ -48,6 +53,7 @@ staging area: `git add`, `git add FILE`, `git add .`
 
 `git commit --amend`
 
+
 stash
 -----
 `git stash`
@@ -58,11 +64,13 @@ stash
 
 `git stash drop`
 
+
 unstaging & revert
 ------------------
 `git reset HEAD FILE`
 
 `git checkout HEAD FILE`
+
 
 merging
 -------
@@ -80,6 +88,7 @@ fix conflicts
 `git commit -m 'Merge to master'`
 
 `git mergetool`
+
 
 remote
 ------
@@ -111,3 +120,19 @@ Where should it be?
 useful to clean history
 
 Do not rebase commits that you have pushed to a public repository.
+
+
+references
+----------
+
+Official Git Web site: http://git-scm.com/
+
+Markdown syntax: http://daringfireball.net/projects/markdown
+
+GitHub: https://github.com/
+
+GitLab: http://gitlab.org/
+
+TortoiseGit: https://code.google.com/p/tortoisegit/
+
+

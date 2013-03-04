@@ -1,5 +1,6 @@
 introduction
 ------------
+
 example of git init
 
 `touch README.md` (useful in Github/Gitlab)
@@ -43,6 +44,7 @@ git development diagram with master and devel branches => should it be placed to
 
 staging area
 ------------
+
 staging area: `git add`, `git add FILE`, `git add .`
 
 `git commit`

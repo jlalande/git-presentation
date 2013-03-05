@@ -1,6 +1,10 @@
 ### Intro
 
+Quick welcome message.
+
 ### History of version control
+
+Show *History of Version Control* slides.
 
 ### My First project
 

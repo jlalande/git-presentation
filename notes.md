@@ -137,4 +137,3 @@ GitLab: http://gitlab.org/
 
 TortoiseGit: https://code.google.com/p/tortoisegit/
 
-

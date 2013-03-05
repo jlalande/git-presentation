@@ -4,6 +4,8 @@
 
 ### My First project
 
+Create a first local project from an empty directory.
+
 ```bash
 mkdir my-git-project
 cd my-git-project
@@ -14,6 +16,11 @@ git commit -m 'First commit'
 
 ### Files status and Lifecycle
 
+- Show project status at different phases.
+- Modify existing file 
+- Add modified file to staging area
+- Commit file
+
 ```bash
 git status
 vi README.md 	# add project title 'my-git-project' in markdown syntax
@@ -23,14 +30,18 @@ git status
 git commit -m 'Add title to readme'
 git status
 git log
+```
 
+Explain difference between new files and new files added to staging area.
+
+```bash
 touch useless-file.txt
 vi README.md	# add Overview subtitle and description
 git status
 git add README.md
 git commit -m 'Add overview section to doc'
 git status
-	
+
 git add useless-file.txt
 git status
 git reset --cached useless-file.txt

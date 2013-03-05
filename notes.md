@@ -31,19 +31,24 @@ centralized remote repository vs fetching changes from co-workers
 branching
 ---------
 
+everything is a branch
+
 `git branch BRANCH`
 
 `git checkout BRANCH`
 
 `git checkout -b NEW_BRANCH`
 
-everything is a branch
-
 git development diagram with master and devel branches => should it be placed toward the end?
 
 
 staging area
 ------------
+
+staging area is a place where new and modified files can be added before performing an actual commit.
+It allows one to create cleaner commits.
+
+It can completely omitted by using the *commit all* command: `git commit -a -m 'Commit Message'`.
 
 staging area: `git add`, `git add FILE`, `git add .`
 
@@ -52,6 +57,14 @@ staging area: `git add`, `git add FILE`, `git add .`
 `git commit -v`
 
 `git commit -a`
+
+altering a commit
+-----------------
+
+It is sometimes useful to alter a commit, either to provide a better commit message or to fix something that has been
+commited too quickly.
+
+Do your changes, add them to the staging area and use the *--amend* parameter when commiting to alter your last commit.
 
 `git commit --amend`
 
@@ -94,6 +107,9 @@ fix conflicts
 
 remote
 ------
+
+It is possible to have multiple remote repositories. This can be useful 
+
 `git remote -v`
 
 `git remote add [shortname] [url]`
@@ -117,12 +133,20 @@ remote
 
 rebasing
 --------
-Where should it be?
 
 useful to clean history
 
 Do not rebase commits that you have pushed to a public repository.
 
+
+reset/revert
+------------
+
+to remove a change added to the staging area, use `git reset HEAD FILE`.  This **does not revert** the file content.
+
+to revert to the original file infrom the current branch, use `git checkout FILE`.
+
+to reset the entire working directory, use `git reset --hard`
 
 references
 ----------

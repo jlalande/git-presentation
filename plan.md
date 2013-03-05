@@ -17,8 +17,7 @@ mkdir my-git-project
 cd my-git-project
 git init
 touch README.md
-git add .
-git commit -m 'First commit'
+git commit -a -m 'First commit' 	# Similar to git add . followed by git commit -m 'Message'
 ```
 
 ### File status Lifecycle
